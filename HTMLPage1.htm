@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Minha pagina Html</title>
+
+  
+   <!-- codigo javascript --> 
+   
+    <script type ="text/javascript">
+        function validacao() {
+        {
+            if (form.Texto  == "")
+            {
+                alert("Invalido! preenca o formulario");
+                return false;
+            }
+
+        }
+    </script>
+
+    <!-- designer da fonte --> 
+    <style type ="text/css">
+        body
+        {
+            font-family:Georgia, " Times New Roman",
+            times,serif;
+            color:red;
+            background:#00000F
+        }
+        h1 
+        {
+            font-family:Helvetica,geneva,arial,
+            sunSans-regular,sans-serif
+        }
+        
+            
+        
+    </style>
+
+    
+    
+</head>
+<body>
+
+    <!-- Menu de navegação do site -->
+    <!-- Links que não levam a lugar nenhum -->
+    <p class = navegar>
+        <li><a href="index.html">Home page</a>
+        <li><a href= "pesamentos.html">Coelhos</a>
+        <li><a href="links.html">Cachorros</a>
+    </p>
+
+    <!-- Conteudo -->
+    <h1>História animais Domesticos</h1>
+   
+	<h2>Gatos</h2>	
+	<p>
+		<img src="img/gatinhos.jpg" onmouseover ="this.src ='img/gatos.jpg'" width = "280" onmouseout="this.src='img/gatinhos.jpg'" alt="gatos"/>
+        <font  color="#CD0000">
+            Os gatos-domésticos atuais são uma adaptação evolutiva dos gatos-selvagens africanos, o que faz com que estes possuam diversas características em comum com os grandes felinos selvagens, como o hábito de caminhar silenciosamente usando suas almofadas plantares, as avançadas técnicas caça e as presença de unhas retráteis.4 No entanto,
+            cruzamentos entre diferentes espécimes os tornaram menores e menos agressivos aos humanos, atendendo assim ao objetivo de se criar um animal de pequeno porte, capaz de caçar roedores e viver nas mesmas habitações que os homens.
+		</font>
+    </P>
+    <li>Gostou da Materia? Clicke no Like</li>
+    <input id="Button1" type="button" value="Like" onClick = "alert('Obrigada!');return true" />
+
+    <!-- Formulario para enviar Comentarios -->
+    <form id ="form"  methoad ="post" action="page2.html" onSubmit= "return validacao()">
+        <li>Comentarios</li>   
+        <textarea id="Texto" cols="50" rows="2"></textarea>
+        <input id="Submit1" type="submit" value="Enviar"   />
+    </form>
+
+    
+</body>
+
+
+</html>
